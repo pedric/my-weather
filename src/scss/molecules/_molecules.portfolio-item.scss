@@ -1,0 +1,14 @@
+.m-portfolio-item {
+	padding: $spacing*3;
+	position: relative;
+
+	&__title {
+		position: absolute;
+    bottom: 50px;
+    font-size: 18px;
+    margin: 0;
+    padding: 3px 28px 4px;
+    background: $light;
+    color: $gray;
+	}
+}

@@ -1,0 +1,11 @@
+.m-hero {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+
+	&__logo {
+		width: 33%;
+	}
+}

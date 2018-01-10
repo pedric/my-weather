@@ -1,0 +1,37 @@
+.m-burger__wrapper {
+	position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: $spacing*2;
+
+  &:hover {
+  	cursor: pointer;
+  }
+}
+
+.m-burger {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	margin: 8px;
+	.m-burger__bar {
+		position: absolute;
+		width: 20px;
+		height: 4px;
+		background: $gray;
+		transition: all 0.25s ease-in-out;
+
+		&:nth-child(1) { top: 0; }
+		&:nth-child(2) { top: 50%; transform: translateY(-50%); }
+		&:nth-child(3) { top: 16px; }			
+	}
+}
+
+.m-burger[active] {
+	.m-burger__bar {
+		background: $light;
+		&:nth-child(1) { top: 50%; transform: translateY(-50%); }
+		&:nth-child(2) { top: 50%; transform: translateY(-50%); }
+		&:nth-child(3) { top: 50%; transform: translateY(-50%); }
+	}
+}

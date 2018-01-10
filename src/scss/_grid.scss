@@ -1,0 +1,46 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.grid-25 {
+	flex-basis: 25%;
+	max-width: 25%;
+}
+
+.grid-33 {
+	flex-basis: 33.3334%;
+	max-width: 33.3334%;
+}
+
+.grid-50 {
+	flex-basis: 50%;
+	max-width: 50%;
+}
+
+.grid-66 {
+	flex-basis: 66.6667%;
+	max-width: 66.6667%;
+}
+
+.grid-75 {
+	flex-basis: 75%;
+	max-width: 75%;
+}
+
+.grid-100 {
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+@media (max-width: $small-device) {
+	.grid-25,
+	.grid-33,
+	.grid-50,
+	.grid-66,
+	.grid-75 {
+		flex-basis: 100%;
+		max-width: 100%;		
+	}
+}
